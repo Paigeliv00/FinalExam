@@ -13,10 +13,10 @@
   <body>
     <div class="container">
       <div class="p-3 mb-2 text-dark p-3 mt-3 mb-3 rounded-3">
-  <h1>How to install a PHP</h1>
+  <nav class="navbar navbar-dark bg-primary"> <h1>How to install a PHP</h1> </nav>
 </div>
  <div class="p-3 mb-2 text-dark p-3 mt-3 mb-3 rounded-3">
-  <h3>What is a PHP</h3>
+  <h3><u>What is a PHP</u></h3>
   <p>Well, as much as I would love to explain the world of PHP's to you, it is easier to send you to a video that explains PHPs. It will catch you up for our lesson on how to install PHP applications. Click the video below to learn about PHPs.</p>
   <iframe width="600" height="345" src="https://www.youtube.com/embed/mBL9Athx7ms">
 </iframe>
@@ -35,13 +35,13 @@
 </div>
 </div>
 <div class="p-3 mb-2 text-dark p-3 mt-3 mb-3 rounded-3">
-<h1> How to Install a PHP Web Based Appication </h1>
+<h1> <u>How to Install a PHP Web Based Appication </u></h1>
 <p>Now don't worry, at the beggining of the semester I didn't know what a PHP was either. A PHP is a CMS system like Joomla and WordPress. Today I will be explain how to install WordPress through Amazon Lightsail. </p>
 <center><img src="wordpress.png"></center>
 <center><i><p>https://wordpress.org/about/logos/</p></i><center>
 </div>
 <div class="p-3 mb-2 text-dark p-3 mt-3 mb-3 rounded-3">
-<h1>Create a Lightsail account</h1>
+<h1><u>Create a Lightsail account</u></h1>
 <p><ul>
 <li> The first step to this process is to go to lightsail.awa.amazon.com and create an account for yourself.</li>
 <li>Once you create your account you are going to want to create an instance</li>
@@ -49,7 +49,7 @@
 </p>
 </div>
 <div class="p-3 mb-2 text-dark p-3 mt-3 mb-3 rounded-3">
-  <h1>Creating an instance</h1>
+  <h1><u>Creating an instance</u></h1>
   <p>This is where you start to build your instance and hopefully get it up and running</p>
   <div class="card-group">
   <div class="card">
@@ -90,6 +90,7 @@
     </div>
   </div>
   <div class="card">
+    <img src="create.png" class="card-img-top" alt="instance button">
     <div class="card-body">
       <h5 class="card-title">Step 6</h5>
       <p class="card-text">Create the instance!</p>
@@ -98,29 +99,64 @@
 </div>
 </div>
 <div class="p-3 mb-2 text-dark p-3 mt-3 mb-3 rounded-3">
-  <h1>Accessing WordPress</h1>
+  <h1><u>Accessing WordPress</u></h1>
   <p>Now, here is where it can get slightly confusing. Stay with me now.</p>
-  <ul>
-    <li>Click on your WordPress Instance</li>
-    <li>To find what your username and password is, you will want to click connect using SSH for your password, and your username will be below (called Bitnami) along with your public IP.</li>
-    <li>Once you open the large black screen that says bitnami with all the code on the page, you will want to type in this exact code to retrieve your password. <b>cat bitnami_application_password</b></li>
-    <img src="password.png">
-   <i> <p>https://www.how2shout.com/how-to/how-to-install-wordpress-on-amazon-lightsail-aws.html</p></i>
-    <li>Your password will now pop up on the bitnami page, copy it, put it somewhere in your notes or in a word/pages doc. Just make sure to keep it safe.</li>
-    <img src="bitnami.png">
-    <i><p>https://www.how2shout.com/how-to/how-to-install-wordpress-on-amazon-lightsail-aws.html</p></i>
-  </ul>
+  <div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Step 7</h5>
+      <p class="card-text">Click on your WordPress Instance</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Step 8</h5>
+      <p class="card-text">TTo find what your username and password is, you will want to click connect using SSH for your password, and your username will be below (called Bitnami) along with your public IP.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="password.png" class="card-img-top" alt="password code">
+    <center><i> <p>https://www.how2shout.com/how-to/how-to-install-wordpress-on-amazon-lightsail-aws.html</p></i></center>
+    <div class="card-body">
+      <h5 class="card-title">Step 9</h5>
+      <p class="card-text">Once you open the large black screen that says bitnami with all the code on the page, you will want to type in this exact code to retrieve your password. <b>cat bitnami_application_password</b></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="bitnami.png" class="card-img-top" alt="bitnami page">
+    <center><i> <p>https://www.how2shout.com/how-to/how-to-install-wordpress-on-amazon-lightsail-aws.html</p></i></center>
+    <div class="card-body">
+      <h5 class="card-title">Step 10</h5>
+      <p class="card-text">Your password will now pop up on the bitnami page, copy it, put it somewhere in your notes or in a word/pages doc. Just make sure to keep it safe.</p>
+    </div>
+  </div>
+</div>
 </div>
 <div class="p-3 mb-2 text-dark p-3 mt-3 mb-3 rounded-3">
-  <h1>Using WordPress</h1>
+  <h1><u>Using WordPress</u></h1>
   <p>Now, the fun part! You are finally able to use your wordpress account!</p>
-  <ul>
-    <li>Now, before logining in, lets make sure it works. Type your public IP into the search bar. When the page reloads, there should be text that says <b>Hello World!</b></li>
-    <li>To get to your login page, you will type your public IP address and then /wp-admin after it.</li>
-    <li>Type in your bitnami username in the username box, type your super secret password in the password box</li>
-    <img src="login.png">
-    <i><p>https://www.how2shout.com/how-to/how-to-install-wordpress-on-amazon-lightsail-aws.html</p></i>
-  </ul>
+  <div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Step 11</h5>
+      <p class="card-text">Now, before logining in, lets make sure it works. Type your public IP into the search bar. When the page reloads, there should be text that says <b>Hello World!</b></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Step 12</h5>
+      <p class="card-text">To get to your login page, you will type your public IP address and then /wp-admin after it.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="login.png" class="card-img-top" alt="login page">
+    <center><i><p>https://www.how2shout.com/how-to/how-to-install-wordpress-on-amazon-lightsail-aws.html</p></i></center>
+    <div class="card-body">
+      <h5 class="card-title">Step 13</h5>
+      <p class="card-text">Type in your bitnami username in the username box, type your super secret password in the password box</p>
+    </div>
+  </div>
+</div>
   <p>And <b>BOOM</b> just like that you are in and able to create any types of blogs your heart desires.</p>
 </div>
 
